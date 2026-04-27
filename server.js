@@ -40,9 +40,7 @@ const allowedOrigins = [
   "https://skyline-frontend-iota.vercel.app",
 ];
 
-app.use(
-  cors({
-    origin: (origin, callback) => {
+app.use(cors());
       // Allow requests with no origin (Postman, Railway health checks)
       if (!origin || allowedOrigins.includes(origin)) {
         callback(null, true);
