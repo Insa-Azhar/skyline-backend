@@ -37,7 +37,7 @@ const allowedOrigins = [
   process.env.FRONTEND_URL || "http://localhost:3000",
   "http://localhost:3000",
   // Add your Vercel URL here after deployment, e.g.:
-  // "https://skyline-ars.vercel.app",
+  "https://skyline-frontend-iota.vercel.app",
 ];
 
 app.use(
